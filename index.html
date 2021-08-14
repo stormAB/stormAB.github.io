@@ -34,6 +34,26 @@
 
 
 
+
+<script type="text/javascript">
+//只在桌面版网页启用樱花特效
+var windowWidth = $(window).width();
+if (windowWidth > 768) {
+    document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+}
+</script>
+
+
+
+
+<!--动态线条背景-->
+<script type="text/javascript"
+color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+</script>
+
+
+
+
 <body>
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
@@ -370,7 +390,16 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
                     var typed = new Typed("#subtitle", {
-                        strings: ['从来没有真正的绝境, 只有心灵的迷途','Never really desperate, only the lost of the soul'],
+                        strings: ['未经允许擅自喜欢你，真的对不起啊',
+									'电影总是很仁慈，总能让错过的人再相遇',
+									'可能我只是你生命里的一个过客，但是你不会遇见第二个我',
+									'大概是风太大了吧，把她之前的温柔都吹散了',
+									'那些短暂又不坚定的喜欢，就不要对我说了',
+									'我知道这个年纪遇到的人不会有结果，但是你很特别，我有点舍不得',
+									'螃蟹在剥我的壳，笔记本在写我，漫天的我落在枫叶上，而你在想我',
+									'梦里出现的人，到底是谁在想谁',
+									'子弹划过红玫瑰，舔狗也曾流过泪',
+									'云朵偷喝了我放在屋顶的酒，于是她的脸红成了晚霞',],
                         startDelay: 300,
                         typeSpeed: 100,
                         loop: true,
@@ -386,9 +415,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -656,9 +683,9 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2021</span>
+                <span id="year">2021</span>
             
-            <span id="year">2019</span>
+            <span id="year">2021</span>
             <a href="/about" target="_blank">小井同学</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
@@ -873,9 +900,20 @@ $(function () {
 
 	
     
-
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
     
 
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
