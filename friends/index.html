@@ -54,6 +54,55 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    var jsonModel = [
+    "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",// 小可爱（女）
+    ];
+    L2Dwidget.init({ 
+        "model": { 
+            "jsonPath": jsonModel[Math.floor(Math.random()*(jsonModel.length))],
+            "scale": 1 
+        }, 
+        "display": { 
+            "position": "right", // 位置left、right
+            "width": 100, // 宽度
+            "height": 200, // 高度
+            "hOffset": 40, // 横向边距
+            "vOffset": -50 // 众向边距
+        }, 
+        "mobile": { 
+            "show": false // 手机是否显示
+        },
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
+
+
 
 <body>
     <header class="navbar-fixed">
@@ -915,6 +964,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 
 </html>
